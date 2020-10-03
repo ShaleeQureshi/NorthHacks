@@ -10,14 +10,15 @@ const Navigation = () => {
       .auth()
       .signOut()
       .then(function () {
-        alert("You have been signed out!");
+        alert("You have been signed out");
+        window.location.reload();
       })
       .catch(function (error) {
         alert(error);
       });
   };
   return (
-    <div className="global-nav">
+    <div className="global-nav regular-text">
       <Navbar expand="lg" variant="dark">
         <Navbar.Brand href="/NorthHacks/#/">North Hacks</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,12 +29,11 @@ const Navigation = () => {
           {currentUser ? (
             <Nav>
               <Nav.Link href="/NorthHacks/#/profile">Profile</Nav.Link>
-              <Nav.Link onClick={Logout} href="/NorthHacks/#/">
-                Logout
-              </Nav.Link>
+              <Nav.Link onClick={Logout}>Logout</Nav.Link>
             </Nav>
           ) : (
             <Nav>
+              <Nav.Link href="/NorthHacks/#/login">Login</Nav.Link>
               <Nav.Link href="/NorthHacks/#/register">Register</Nav.Link>
             </Nav>
           )}

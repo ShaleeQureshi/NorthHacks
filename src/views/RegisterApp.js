@@ -46,27 +46,20 @@ const RegisterApp = ({ history }) => {
         <Jumbo
           elements={
             <div className="landing-txt">
-              <h1>Register</h1>
-              <p>Register for Free to participate in our upcoming Hackathon!</p>
+              <h1 className="light-text">Register</h1>
+              <p className="italic-text">
+                {" "}
+                Powered with Google Firebase Authentication
+              </p>
             </div>
           }
         />
         <section>
           <Container>
-            <div className="blue-text mt-5 mb-5">
-              <h1>Registration</h1>
-              <p>
-                <span className="italic-text">
-                  Powered with Google Firebase Authentication
-                </span>
-                <br />
-                <span className="bold-text">
-                  {" "}
-                  Note: Only 1 person should register per team!
-                </span>
-              </p>
-            </div>
-            <Form onSubmit={SignUpUser}>
+            <p className="bold-text">
+              Note: Only 1 person should register per team!
+            </p>
+            <Form onSubmit={SignUpUser} className="light-text">
               <Form.Group>
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
@@ -74,7 +67,10 @@ const RegisterApp = ({ history }) => {
                   placeholder="name@example.com"
                   id="email"
                   required
-                />
+                />{" "}
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
               </Form.Group>
               <Form.Group>
                 <Form.Label>Password</Form.Label>
@@ -105,13 +101,7 @@ const RegisterApp = ({ history }) => {
               <Button variant="dark" type="submit">
                 Register
               </Button>
-              <Button
-                variant="link"
-                href="#"
-                onClick={() => {
-                  alert("Coming Soon");
-                }}
-              >
+              <Button variant="link" href="/NorthHacks/#/login">
                 Already have an account?
               </Button>
             </Form>

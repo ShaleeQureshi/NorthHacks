@@ -8,10 +8,6 @@ import "./styles/fonts.css";
 import "./styles/text.scss";
 import "./styles/spacing.css";
 import "./styles/main.scss";
+import "./styles/responsive.scss";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));

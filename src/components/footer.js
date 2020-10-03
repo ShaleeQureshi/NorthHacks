@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Container, Row, Button } from "react-bootstrap";
+import instagram from "../assets/images/rsz_instagram_icon.png";
 
 const Footer = () => {
   return (
@@ -27,6 +27,15 @@ const Footer = () => {
             </Button>
           </h6>
         </div>
+      </Row>
+      <Row className="justify-content-around">
+        <a
+          href="https://www.instagram.com/north.hacks/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={instagram} alt="Instagram" />
+        </a>
       </Row>
       <div className="footer-copyright text-center py-3">
         Copyright{" "}

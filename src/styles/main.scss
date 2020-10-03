@@ -22,7 +22,12 @@
 }
 
 .box-shadow-list {
+  background-color: aliceblue;
   -moz-box-shadow: 0 0 1px rgb(0, 0, 0);
   -webkit-box-shadow: 0 0 1px rgb(0, 0, 0);
   box-shadow: 0 0 1px rgb(0, 0, 0);
+}
+
+.carousel-controlled {
+  border: 5px solid white;
 }

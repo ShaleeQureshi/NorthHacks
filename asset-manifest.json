@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/NorthHacks/static/css/main.dfae607e.chunk.css",
-    "main.js": "/NorthHacks/static/js/main.e31e6ab6.chunk.js",
-    "main.js.map": "/NorthHacks/static/js/main.e31e6ab6.chunk.js.map",
+    "main.css": "/NorthHacks/static/css/main.6bdd38ae.chunk.css",
+    "main.js": "/NorthHacks/static/js/main.de86200e.chunk.js",
+    "main.js.map": "/NorthHacks/static/js/main.de86200e.chunk.js.map",
     "runtime-main.js": "/NorthHacks/static/js/runtime-main.1d4fc524.js",
     "runtime-main.js.map": "/NorthHacks/static/js/runtime-main.1d4fc524.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/NorthHacks/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.708d8c6b.chunk.js": "/NorthHacks/static/js/2.708d8c6b.chunk.js",
-    "static/js/2.708d8c6b.chunk.js.map": "/NorthHacks/static/js/2.708d8c6b.chunk.js.map",
+    "static/js/2.4ced7bbd.chunk.js": "/NorthHacks/static/js/2.4ced7bbd.chunk.js",
+    "static/js/2.4ced7bbd.chunk.js.map": "/NorthHacks/static/js/2.4ced7bbd.chunk.js.map",
     "index.html": "/NorthHacks/index.html",
-    "precache-manifest.b2efed6aecfe4bad7e02efc41f2e4000.js": "/NorthHacks/precache-manifest.b2efed6aecfe4bad7e02efc41f2e4000.js",
+    "precache-manifest.6fcd786ac478b62d0a959324890e3ca1.js": "/NorthHacks/precache-manifest.6fcd786ac478b62d0a959324890e3ca1.js",
     "service-worker.js": "/NorthHacks/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/NorthHacks/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.dfae607e.chunk.css.map": "/NorthHacks/static/css/main.dfae607e.chunk.css.map",
-    "static/js/2.708d8c6b.chunk.js.LICENSE.txt": "/NorthHacks/static/js/2.708d8c6b.chunk.js.LICENSE.txt",
-    "static/media/fonts.css": "/NorthHacks/static/media/Ubuntu-Regular.2505bfbd.ttf"
+    "static/css/main.6bdd38ae.chunk.css.map": "/NorthHacks/static/css/main.6bdd38ae.chunk.css.map",
+    "static/js/2.4ced7bbd.chunk.js.LICENSE.txt": "/NorthHacks/static/js/2.4ced7bbd.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/NorthHacks/static/media/Ubuntu-Regular.2505bfbd.ttf",
+    "static/media/north hacks carasouel.png": "/NorthHacks/static/media/north hacks carasouel.2f651c37.png",
+    "static/media/north hacks carasouel_1.png": "/NorthHacks/static/media/north hacks carasouel_1.386c2ecb.png",
+    "static/media/north hacks carasouel_2.png": "/NorthHacks/static/media/north hacks carasouel_2.b158b194.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1d4fc524.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.708d8c6b.chunk.js",
-    "static/css/main.dfae607e.chunk.css",
-    "static/js/main.e31e6ab6.chunk.js"
+    "static/js/2.4ced7bbd.chunk.js",
+    "static/css/main.6bdd38ae.chunk.css",
+    "static/js/main.de86200e.chunk.js"
   ]
 }

@@ -1,0 +1,28 @@
+.global-nav {
+  background-color: #02203c;
+  font-family: Ubuntu-Regular;
+}
+.footer {
+  background-color: #02203c;
+  color: white;
+}
+
+.jumbo-style {
+  color: white;
+  background-color: #02203c;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.bg-home {
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+}
+
+.box-shadow-list {
+  -moz-box-shadow: 0 0 1px rgb(0, 0, 0);
+  -webkit-box-shadow: 0 0 1px rgb(0, 0, 0);
+  box-shadow: 0 0 1px rgb(0, 0, 0);
+}

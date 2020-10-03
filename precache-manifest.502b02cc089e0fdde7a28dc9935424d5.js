@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1cfd62b6ca8a644bb726d7f8a3d39826",
+    "revision": "9df94c8ce13139697aad436d0c079fd6",
     "url": "/NorthHacks/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NorthHacks/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "c53c5087ee7cb102c389",
-    "url": "/NorthHacks/static/css/main.ecedbaf3.chunk.css"
+    "revision": "18be30453c4deeeaed1b",
+    "url": "/NorthHacks/static/css/main.dfae607e.chunk.css"
   },
   {
     "revision": "ad9207420f68be81b471",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NorthHacks/static/js/2.708d8c6b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c53c5087ee7cb102c389",
-    "url": "/NorthHacks/static/js/main.c1ba66d0.chunk.js"
+    "revision": "18be30453c4deeeaed1b",
+    "url": "/NorthHacks/static/js/main.48a1158b.chunk.js"
   },
   {
     "revision": "e096207cb0b0c0d6d43d",

@@ -19,7 +19,7 @@ const Navigation = () => {
   return (
     <div className="global-nav">
       <Navbar expand="lg" variant="dark">
-        <Navbar.Brand href="/">North Hacks</Navbar.Brand>
+        <Navbar.Brand href="/NorthHacks/#/">North Hacks</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -27,14 +27,14 @@ const Navigation = () => {
           </Nav>
           {currentUser ? (
             <Nav>
-              <Nav.Link href="/profile">Profile</Nav.Link>
-              <Nav.Link onClick={Logout} href="/">
+              <Nav.Link href="/NorthHacks/#/profile">Profile</Nav.Link>
+              <Nav.Link onClick={Logout} href="/NorthHacks/#/">
                 Logout
               </Nav.Link>
             </Nav>
           ) : (
             <Nav>
-              <Nav.Link href="/register">Register</Nav.Link>
+              <Nav.Link href="/NorthHacks/#/register">Register</Nav.Link>
             </Nav>
           )}
         </Navbar.Collapse>

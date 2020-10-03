@@ -8,7 +8,7 @@ const Footer = () => {
       <Row className="text-center d-flex justify-content-center pt-5 mb-3">
         <div className="col-md-2 mb-3">
           <h6 className="text-uppercase font-weight-bold">
-            <Button href="/" variant="dark">
+            <Button href="/NorthHacks/#/" variant="dark">
               Home
             </Button>
           </h6>
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="col-md-2 mb-3">
           <h6 className="text-uppercase font-weight-bold">
-            <Button href="/register" variant="dark">
+            <Button href="/NorthHacks/#/register" variant="dark">
               Register
             </Button>
           </h6>

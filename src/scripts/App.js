@@ -4,6 +4,7 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 
 // Importing Views
 import HomeApp from "../views/HomeApp";
+import MissionApp from "../views/MissionApp";
 import RegisterApp from "../views/RegisterApp";
 import LoginApp from "../views/LoginApp";
 import ProfileApp from "../views/ProfileApp";
@@ -18,6 +19,7 @@ function App() {
       <HashRouter basename="/NorthHacks/">
         <Switch>
           <Route path={["/", "/home"]} exact component={HomeApp} />
+          <Route path="/mission" exact component={MissionApp} />
           <Route
             path={["/register", "/signup", "/sign-up"]}
             exact

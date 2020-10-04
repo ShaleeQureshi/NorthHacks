@@ -59,7 +59,7 @@ const HomeApp = () => {
                       fun and interactive competitions such as the upcoming
                       hackathon. More news to come in the future!
                     </p>
-                    <Button variant="dark" href="#">
+                    <Button variant="dark" href="/NorthHacks/#/mission">
                       Coming Soon
                     </Button>
                   </div>

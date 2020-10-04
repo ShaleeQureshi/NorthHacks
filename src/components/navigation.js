@@ -24,7 +24,7 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#">Coming Soon</Nav.Link>
+            <Nav.Link href="/NorthHacks/#/mission">Mission</Nav.Link>
           </Nav>
           {currentUser ? (
             <Nav>

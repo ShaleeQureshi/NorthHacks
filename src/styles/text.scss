@@ -19,9 +19,19 @@ $fontBold: Ubuntu-Bold;
   letter-spacing: 10px;
 }
 
+.word-wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 800px;
+}
+
 // Colors
 .blue-text {
   color: #02203c;
+}
+
+.white-text {
+  color: white;
 }
 
 // Styling div text components

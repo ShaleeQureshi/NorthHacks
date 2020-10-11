@@ -72,7 +72,7 @@ class ProfileApp extends React.Component {
         function error(error) {
           console.log(error);
           alert(
-            "An error has occured with your upload!\nYour File may be too large make sure it does not exceed 100mb!\nIf you file is too large post it on a GitHub Repository and submit a textfile with a link to it!"
+            "An error has occured with your file upload!\nYour File may be too large make sure it does not exceed 100mb!\nIf you file is too large post it on a GitHub Repository and submit a textfile with a link to it!"
           );
         },
         function complete() {

@@ -22,6 +22,18 @@ const LoginApp = ({ history }) => {
     },
     [history]
   );
+  const resetPassword = (event, email) => {
+    event.preventDefault();
+    firebase
+      .auth()
+      .sendPasswordResetEmail(email)
+      .then(() => {
+        alert("Password reset email sent to: " + email);
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  };
   return (
     <div className="bg-home">
       <div className="wrapper">
@@ -55,7 +67,7 @@ const LoginApp = ({ history }) => {
                   We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
-              <Form.Group>
+              <Form.Group id="passGrp">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
                   type="password"
@@ -64,11 +76,30 @@ const LoginApp = ({ history }) => {
                   required
                 />
               </Form.Group>
-              <Button variant="dark" type="submit">
+              <Button variant="dark" type="submit" id="loginBtn">
                 Login
               </Button>
-              <Button variant="link" href="/NorthHacks/#/register">
-                Don't have an account?
+              <Button
+                variant="dark"
+                id="resetPassBtn"
+                style={{ display: "none" }}
+                onClick={(event) => {
+                  resetPassword(event, document.getElementById("email").value);
+                }}
+              >
+                Reset Password
+              </Button>
+              <Button
+                variant="link"
+                onClick={(event) => {
+                  event.preventDefault();
+                  document.getElementById("passGrp").style.display = "none";
+                  document.getElementById("loginBtn").style.display = "none";
+                  document.getElementById("resetPassBtn").style.display =
+                    "inline";
+                }}
+              >
+                Forgot Password?
               </Button>
             </Form>
           </Container>

@@ -1,11 +1,10 @@
 import React from "react";
 import Typical from "react-typical";
-import { Container, Row, Card, Image } from "react-bootstrap";
+import { Container, Row, Image } from "react-bootstrap";
 
 // Importing my components
 import Navigation from "../components/navigation";
 import Jumbo from "../components/jumbo";
-import ControlledCarousel from "../components/carousel";
 import Footer from "../components/footer";
 
 // Importing Assets

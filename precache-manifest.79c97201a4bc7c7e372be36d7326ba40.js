@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "498a4a5ff9e98438dc3196a4f81310ec",
+    "revision": "93fe9773011ca6a728b51ce9bbe3119f",
     "url": "/NorthHacks/index.html"
   },
   {
-    "revision": "56b3ad55760c991414c0",
-    "url": "/NorthHacks/static/css/2.d9ad5f5c.chunk.css"
+    "revision": "dd8b84f23e9c9c3beb97",
+    "url": "/NorthHacks/static/css/2.5e6cee6f.chunk.css"
   },
   {
-    "revision": "0f8703a4677288bf61ec",
-    "url": "/NorthHacks/static/css/main.6bdd38ae.chunk.css"
+    "revision": "b2a260c3f2f2046f5300",
+    "url": "/NorthHacks/static/css/main.0843984b.chunk.css"
   },
   {
-    "revision": "56b3ad55760c991414c0",
-    "url": "/NorthHacks/static/js/2.4ced7bbd.chunk.js"
+    "revision": "dd8b84f23e9c9c3beb97",
+    "url": "/NorthHacks/static/js/2.a5a50408.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/NorthHacks/static/js/2.4ced7bbd.chunk.js.LICENSE.txt"
+    "url": "/NorthHacks/static/js/2.a5a50408.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f8703a4677288bf61ec",
-    "url": "/NorthHacks/static/js/main.de86200e.chunk.js"
+    "revision": "b2a260c3f2f2046f5300",
+    "url": "/NorthHacks/static/js/main.6fe8df1e.chunk.js"
   },
   {
     "revision": "e096207cb0b0c0d6d43d",
     "url": "/NorthHacks/static/js/runtime-main.1d4fc524.js"
+  },
+  {
+    "revision": "d47a9347a8a82b5faaa2d6c73b8fdf5d",
+    "url": "/NorthHacks/static/media/Custom Preset 2_1.d47a9347.png"
+  },
+  {
+    "revision": "47b46f89a9e154e1f6d3cc5fd18c7ea8",
+    "url": "/NorthHacks/static/media/Custom Preset_2.47b46f89.png"
   },
   {
     "revision": "e00e2a77dd88a8fe75573a5d993af76a",

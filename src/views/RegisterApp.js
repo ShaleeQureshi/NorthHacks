@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import * as firebase from "firebase";
-import { Container, Button, Form } from "react-bootstrap";
+import { Container, Button, Form, Row } from "react-bootstrap";
 
 // Importing my Components
 import Navigation from "../components/navigation";
@@ -45,13 +45,16 @@ const RegisterApp = ({ history }) => {
         <Navigation />
         <Jumbo
           elements={
-            <div className="landing-txt">
-              <h1 className="light-text">Register</h1>
-              <p className="italic-text">
-                {" "}
-                Powered with Google Firebase Authentication
-              </p>
-            </div>
+            <Row className="justify-content-around">
+              <div className="landing-txt text-center">
+                <h1 className="light-text">Register</h1>
+                <hr className="jumbo-underline" />
+                <p className="italic-text">
+                  {" "}
+                  Powered with Google Firebase Authentication
+                </p>
+              </div>
+            </Row>
           }
         />
         <section>

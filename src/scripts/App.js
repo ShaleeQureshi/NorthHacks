@@ -12,11 +12,13 @@ import ProfileApp from "../views/ProfileApp";
 // Importing essential scripts
 import { AuthProvider } from "./firebase/auth";
 import PrivateRoute from "./privare-route";
+import ScrollToTop from "./scroll-to-top";
 
 function App() {
   return (
     <AuthProvider>
       <HashRouter basename="/NorthHacks/">
+        <ScrollToTop />
         <Switch>
           <Route path={["/", "/home"]} exact component={HomeApp} />
           <Route path="/mission" exact component={MissionApp} />

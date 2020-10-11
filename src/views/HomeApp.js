@@ -60,7 +60,7 @@ const HomeApp = () => {
                       hackathon. More news to come in the future!
                     </p>
                     <Button variant="dark" href="/NorthHacks/#/mission">
-                      Coming Soon
+                      Read More
                     </Button>
                   </div>
                 }

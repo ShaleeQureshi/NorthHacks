@@ -155,8 +155,8 @@ class ProfileApp extends React.Component {
                   }
                 />
                 <Card
-                  bg="success"
-                  textColor="dark"
+                  bg="dark"
+                  textColor="light"
                   styleCard="21rem"
                   customClass="light-text"
                   header="Help"

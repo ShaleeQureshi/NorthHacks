@@ -165,8 +165,8 @@ class ProfileApp extends React.Component {
                   optional={
                     <p>
                       Email us at :{" "}
-                      <a href="mailto:next.hackscompetition@gmail.com">
-                        next.hackscompetition@gmail.com
+                      <a href="mailto:north.hackscompetition@gmail.com">
+                        north.hackscompetition@gmail.com
                       </a>
                     </p>
                   }

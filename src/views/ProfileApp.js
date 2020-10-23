@@ -2,7 +2,7 @@ import React from "react";
 import Typical from "react-typical";
 import * as firebase from "firebase";
 
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 
 // Importing my Components
 import Navigation from "../components/navigation";
@@ -45,41 +45,35 @@ class ProfileApp extends React.Component {
   submitData(event) {
     event.preventDefault();
     const file = event.target.files[0];
-    const dt = new Date();
-    if (dt.getDate() < 23 || dt.getDate() > 26) {
-      alert("The DropBox is Currently Closed!");
-      return;
-    } else {
-      const storage = firebase
-        .storage()
-        .ref(
+    const storage = firebase
+      .storage()
+      .ref(
+        "/" +
+          this.state.data[0]["c1"] +
           "/" +
-            this.state.data[0]["c1"] +
-            "/" +
-            this.state.data[0]["c2"] +
-            "/" +
-            file.name
-        );
-      const task = storage.put(file);
-      task.on(
-        "state_changed",
-        function progress(snapshot) {
-          const uploader = document.getElementById("progBar");
-          const percentage =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          uploader.value = percentage;
-        },
-        function error(error) {
-          console.log(error);
-          alert(
-            "An error has occured with your file upload!\nYour File may be too large make sure it does not exceed 100mb!\nIf you file is too large post it on a GitHub Repository and submit a textfile with a link to it!"
-          );
-        },
-        function complete() {
-          alert("File Uploaded!");
-        }
+          this.state.data[0]["c2"] +
+          "/" +
+          file.name
       );
-    }
+    const task = storage.put(file);
+    task.on(
+      "state_changed",
+      function progress(snapshot) {
+        const uploader = document.getElementById("progBar");
+        const percentage =
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        uploader.value = percentage;
+      },
+      function error(error) {
+        console.log(error);
+        alert(
+          "An error has occured with your file upload!\nYour File may be too large make sure it does not exceed 100mb!\nIf you file is too large post it on a GitHub Repository and submit a textfile with a link to it!"
+        );
+      },
+      function complete() {
+        alert("File Uploaded!");
+      }
+    );
   }
 
   componentDidMount() {
@@ -97,7 +91,17 @@ class ProfileApp extends React.Component {
                 <h1>Welcome</h1>
                 <hr className="jumbo-underline" />
                 <Typical
-                  steps={[this.state.data[0]["c2"], 100]}
+                  steps={"Team: " + [this.state.data[0]["c2"]]}
+                  loop={1}
+                  wrapper="p"
+                />
+                <Typical
+                  steps={"Team Size: " + [this.state.data[0]["c3"]]}
+                  loop={1}
+                  wrapper="p"
+                />
+                <Typical
+                  steps={"@" + [this.state.data[0]["c1"]]}
                   loop={1}
                   wrapper="p"
                 />
@@ -112,14 +116,16 @@ class ProfileApp extends React.Component {
                   textColor="light"
                   styleCard="21rem"
                   customClass="light-text"
-                  header=" "
-                  title="Team Info"
+                  header="Event Details"
+                  title="Timeline: Oct 23 - Nov 2 (Midnight)"
                   optional={
-                    <div>
-                      <p>Email: {this.state.data[0]["c1"]}</p>
-                      <p>Team Name: {this.state.data[0]["c2"]}</p>
-                      <p>Team Size: {this.state.data[0]["c3"]}</p>
-                    </div>
+                    <Button
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://docs.google.com/document/d/1kPxzyRbh0CcHA0CWNpNo09LIRoPgzmU0iMVyymtq6j8/edit?usp=sharing"
+                    >
+                      Click to see Event Details
+                    </Button>
                   }
                 />
                 <Card
@@ -134,7 +140,7 @@ class ProfileApp extends React.Component {
                     <div>
                       <div style={{ fontSize: "12px" }}>
                         <p>
-                          DropBox will be open from Oct 23 12am - Oct 26 12am
+                          DropBox will be open from Oct 23 12am - Nov 2 12am
                         </p>
                         <p>(100MB Max, submit ZIPPED files when possible)</p>
                       </div>

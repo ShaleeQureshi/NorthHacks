@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/NorthHacks/static/css/main.0843984b.chunk.css",
-    "main.js": "/NorthHacks/static/js/main.e77a1be6.chunk.js",
+    "main.js": "/NorthHacks/static/js/main.5bfcf966.chunk.js",
     "runtime-main.js": "/NorthHacks/static/js/runtime-main.1d4fc524.js",
     "static/css/2.5e6cee6f.chunk.css": "/NorthHacks/static/css/2.5e6cee6f.chunk.css",
-    "static/js/2.441014ec.chunk.js": "/NorthHacks/static/js/2.441014ec.chunk.js",
+    "static/js/2.01539c6c.chunk.js": "/NorthHacks/static/js/2.01539c6c.chunk.js",
     "index.html": "/NorthHacks/index.html",
-    "precache-manifest.35f779d98f600fa5ffa1225bbf07f870.js": "/NorthHacks/precache-manifest.35f779d98f600fa5ffa1225bbf07f870.js",
+    "precache-manifest.5035baa3ada9653052449dfa72001fa2.js": "/NorthHacks/precache-manifest.5035baa3ada9653052449dfa72001fa2.js",
     "service-worker.js": "/NorthHacks/service-worker.js",
-    "static/js/2.441014ec.chunk.js.LICENSE.txt": "/NorthHacks/static/js/2.441014ec.chunk.js.LICENSE.txt",
+    "static/js/2.01539c6c.chunk.js.LICENSE.txt": "/NorthHacks/static/js/2.01539c6c.chunk.js.LICENSE.txt",
     "static/media/Custom Preset 2_1.png": "/NorthHacks/static/media/Custom Preset 2_1.d47a9347.png",
     "static/media/Custom Preset_2.png": "/NorthHacks/static/media/Custom Preset_2.47b46f89.png",
     "static/media/fonts.css": "/NorthHacks/static/media/Ubuntu-Regular.2505bfbd.ttf",
@@ -19,8 +19,8 @@
   "entrypoints": [
     "static/js/runtime-main.1d4fc524.js",
     "static/css/2.5e6cee6f.chunk.css",
-    "static/js/2.441014ec.chunk.js",
+    "static/js/2.01539c6c.chunk.js",
     "static/css/main.0843984b.chunk.css",
-    "static/js/main.e77a1be6.chunk.js"
+    "static/js/main.5bfcf966.chunk.js"
   ]
 }

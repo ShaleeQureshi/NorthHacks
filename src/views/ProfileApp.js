@@ -117,7 +117,7 @@ class ProfileApp extends React.Component {
                   styleCard="21rem"
                   customClass="light-text"
                   header="Event Details"
-                  title="Timeline: Oct 23 - Nov 2 (Midnight)"
+                  title="Timeline: Oct 23 - Nov 8 (Midnight)"
                   optional={
                     <Button
                       target="_blank"
@@ -140,7 +140,7 @@ class ProfileApp extends React.Component {
                     <div>
                       <div style={{ fontSize: "12px" }}>
                         <p>
-                          DropBox will be open from Oct 23 12am - Nov 2 12am
+                          DropBox will be open from Oct 23 12am - Nov 8 12am
                         </p>
                         <p>(100MB Max, submit ZIPPED files when possible)</p>
                       </div>

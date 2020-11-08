@@ -83,7 +83,7 @@ class ProfileApp extends React.Component {
                   styleCard="21rem"
                   customClass="light-text"
                   header="Event Details"
-                  title="Timeline: Oct 23 - Nov 8 (Midnight)"
+                  title="Event is over"
                   optional={
                     <Button
                       target="_blank"

@@ -42,40 +42,6 @@ class ProfileApp extends React.Component {
       });
   }
 
-  submitData(event) {
-    event.preventDefault();
-    const file = event.target.files[0];
-    const storage = firebase
-      .storage()
-      .ref(
-        "/" +
-          this.state.data[0]["c1"] +
-          "/" +
-          this.state.data[0]["c2"] +
-          "/" +
-          file.name
-      );
-    const task = storage.put(file);
-    task.on(
-      "state_changed",
-      function progress(snapshot) {
-        const uploader = document.getElementById("progBar");
-        const percentage =
-          (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        uploader.value = percentage;
-      },
-      function error(error) {
-        console.log(error);
-        alert(
-          "An error has occured with your file upload!\nYour File may be too large make sure it does not exceed 100mb!\nIf you file is too large post it on a GitHub Repository and submit a textfile with a link to it!"
-        );
-      },
-      function complete() {
-        alert("File Uploaded!");
-      }
-    );
-  }
-
   componentDidMount() {
     this.getData();
   }
@@ -135,28 +101,16 @@ class ProfileApp extends React.Component {
                   customClass="light-text"
                   header=" "
                   title="DropBox"
-                  text="Upload your file to the DropBox below"
+                  text="The DropBox is closed"
                   optional={
                     <div>
-                      <div style={{ fontSize: "12px" }}>
-                        <p>
-                          DropBox will be open from Oct 23 12am - Nov 8 12am
-                        </p>
-                        <p>(100MB Max, submit ZIPPED files when possible)</p>
-                      </div>
                       <progress
                         value="0"
                         max="100"
                         id="progBar"
                         className="w-100"
                       />
-                      <input
-                        type="file"
-                        id="fileSubmission"
-                        onChange={(event) => {
-                          this.submitData(event);
-                        }}
-                      />
+                      <input type="file" id="fileSubmission" disabled />
                     </div>
                   }
                 />
